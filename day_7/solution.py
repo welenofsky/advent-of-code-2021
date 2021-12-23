@@ -33,4 +33,4 @@ def get_fuel_cost(subject, target, test_section):
     if test_section == 'part_1':
         return diff
     else:
-        return diff * (diff / 2 + .5)
+        return int(diff * (diff / 2 + .5))
