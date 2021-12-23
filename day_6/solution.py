@@ -13,13 +13,16 @@ def solution(inputdata, days):
         new_counts = fish_counts.copy()
         for j in range(8, -1, -1):
             if j == 8:
+                # Create new baby fish
                 new_counts['8'] = fish_counts['0']
             elif j == 6:
+                # Reset birth counter
                 new_counts['6'] = fish_counts['0'] + fish_counts['7']
             else:
+                # All else shift down 1 day
                 new_counts[f"{j}"] = fish_counts[f"{j + 1}"]
         fish_counts = new_counts
-    return sum([i for i in fish_counts.values()])
+    return sum(fish_counts.values())
 
 
 def parse_input_data(data_str):
