@@ -87,5 +87,5 @@ you would be able to use multiplication to  calculate cost. I also noticed that 
 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
 
 8 * 4.5
-1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36
 ```
